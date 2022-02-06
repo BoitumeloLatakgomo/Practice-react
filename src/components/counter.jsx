@@ -8,13 +8,14 @@ import React, { Component } from 'react';
     };
     
     handleIncrement = () => {
-        console.log("test");
+
+    
         this.setState({count: this.state.count + 1})
     };
    
     render() { 
         
-        console.log("test");
+        
         return(
         <div>
              <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
@@ -36,7 +37,7 @@ import React, { Component } from 'react';
 
     formatCount(){ 
         const {count} = this.state;
-        return count === 0 ? "On zero" : count;
+        return count === 0 ? " zero" : count;
     }
 }
 
